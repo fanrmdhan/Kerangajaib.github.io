@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pertanyaan Kerang Ajaib</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Hubungkan ke CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="logo" aria-label="Kerang Ajaib">
+        <span class="shell-emoji" aria-hidden="true">🐚</span>
+        <span>Kerang Ajaib</span>
+      </div>
+      <button class="about-btn" id="aboutBtn">About</button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>Tanyakan Apa Saja Pada <em>Kerang Ajaib</em></h1>
+      <p class="subtitle">Kerang tahu segalanya. Atau mungkin tidak.</p>
+
+      <div class="ask-row">
+        <input type="text" id="questionInput" placeholder="Tulis pertanyaanmu di sini..." autocomplete="off" aria-label="Tulis pertanyaan"/>
+        <button id="askBtn" type="button">Tanya Kerang</button>
+      </div>
+    </section>
+
+    <!-- MAIN INTERACTION -->
+    <section class="interaction" aria-live="polite">
+      <div class="shell" id="shell">
+        <div class="shell-label">🐚 Kerang Ajaib</div>
+        <div class="answer-card" id="answerCard">
+          <span class="placeholder">•••</span>
+        </div>
+      </div>
+      <span class="hint">isi pertanyaan, lalu tekan "Tanya Kerang"</span>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>Pertanyaan Kerang Ajaib — outline UI · monochrome · wireframe</span>
+      <span class="footer-mark">© 2026</span>
+    </footer>
+
+  </div>
+
+  <!-- ABOUT MODAL -->
+  <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
+    <div class="modal">
+      <h2 id="aboutTitle">Tentang Kerang</h2>
+      <p>Kerang Ajaib adalah makhluk legendaris yang hanya muncul dalam wujud wireframe monokrom. Ia menjawab dengan salah satu dari empat kemungkinan: <strong>Ya</strong>, <strong>Tidak</strong>, <strong>Mungkin</strong>, atau <strong>Coba Lagi</strong>.</p>
+      <p style="font-size: 0.9rem; color: #555555;">Tidak ada jaminan kebenaran — hanya kesenangan. Desain outline, tanpa gradient, tanpa warna, hanya garis dan ruang.</p>
+      <button id="closeAbout" type="button">Tutup</button>
+    </div>
+  </div>
+
+  <!-- Hubungkan ke JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
